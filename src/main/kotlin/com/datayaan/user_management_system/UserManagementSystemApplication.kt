@@ -9,13 +9,11 @@ class UserManagementSystemApplication
 
 fun main(args: Array<String>) {
 
-	fun main() {
-		val passwordEncoder = BCryptPasswordEncoder()
-		val rawPassword = "password123" // Replace with the actual password
-		val hashedPassword = passwordEncoder.encode(rawPassword)
+	val passwordEncoder = BCryptPasswordEncoder()
+	val rawPassword = "password123" // Replace with the actual password
+	val hashedPassword = passwordEncoder.encode(rawPassword)
 
-		println("Hashed Password: $hashedPassword")
-	}
+	println("Hashed Password: $hashedPassword")
 
 	runApplication<UserManagementSystemApplication>(*args)
 }
